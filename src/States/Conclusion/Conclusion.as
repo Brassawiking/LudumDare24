@@ -6,7 +6,6 @@ package States.Conclusion
 	{
 		private var _title:FlxSprite;
 		private var _sabina:FlxSprite;
-		private var _backpack:FlxSprite;
 		private var _mainGroup:FlxGroup;
 		
 		private var _currentAction:Function;
@@ -18,16 +17,11 @@ package States.Conclusion
 			var _mainGroup:FlxGroup = new FlxGroup();
 			
 			_mainGroup.add(new FlxSprite(0, 0, Images.Prelude_bg));
-			_mainGroup.add(new FlxSprite(0, 0, Images.Prelude_crowdFar));
-			_mainGroup.add(new FlxSprite(0, 0, Images.Prelude_crowdNear));
 			
 			_sabina = new FlxSprite(0, 0, Images.Prelude_Sabina_1);
 			_mainGroup.add(_sabina);
-			_backpack = new FlxSprite(0, 0, Images.Prelude_Backpack_1);
-			_backpack.visible = false;
-			_mainGroup.add(_backpack);
 			
-			_title = new FlxSprite(0, 0, Images.Prelude_title);			
+			_title = new FlxSprite(0, 0, Images.Conclusion_title);			
 			_title.alpha = 0;
 			
 			add(_mainGroup);

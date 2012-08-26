@@ -12,7 +12,7 @@ package {
 	{
 		public function Main()
 		{
-			super(960,540,Conclusion,1);
+			super(960,540,Survive,1);
 		}
 	}
 }

@@ -12,7 +12,7 @@ package States.Start
 			add(new FlxSprite(0, 0, Images.StartScreen));
 			
 			_isActive = true;
-			FlxG.flash(0xff000000, 3, fadeInComplete);
+			FlxG.flash(0xff000000, 1, fadeInComplete);
 		}
 		
 		override public function update():void
@@ -20,7 +20,7 @@ package States.Start
 			if (_isActive && FlxG.keys.any())
 			{
 				_isActive = false;
-				FlxG.fade(0xff000000, 3, fadeOutComplete);
+				FlxG.fade(0xff000000, 1, fadeOutComplete);
 			}				
 		}
 		
