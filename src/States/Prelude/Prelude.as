@@ -169,7 +169,7 @@ package States.Prelude
 		private function EndPreludeScene():void
 		{
 			FlxG.flash(0x99ff0000)
-			FlxG.shake(0.05, 2, FinalFadeOut);
+			FlxG.shake(0.05, 2, FinalFadeOut, true, 2);
 		}
 		
 		private function FinalFadeOut():void

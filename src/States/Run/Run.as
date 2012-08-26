@@ -72,7 +72,7 @@ package States.Run
 					_title.alpha += (1.0 - _title.alpha) * 0.01;					
 				}		
 			}
-			var offset = (_bgA.x + _movingVelocity + _diveBoost) % 960;
+			var offset:Number = (_bgA.x + _movingVelocity + _diveBoost) % 960;
 			_bgA.x = offset;
 			_bgB.x = offset - 960;
 			

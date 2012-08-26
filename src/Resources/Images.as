@@ -106,7 +106,65 @@ package Resources
 		[Embed(source = "../../Content/Images/Survive/Enemy/3.png")]	
 		public static var Survive_Enemy_3:Class;
 
+		//Escape
+		[Embed(source = "../../Content/Images/Escape/title.png")]	
+		public static var Escape_title:Class;
+
+		[Embed(source = "../../Content/Images/Escape/bg.png")]	
+		public static var Escape_bg:Class;
+
+		[Embed(source = "../../Content/Images/Escape/Sabina/1.png")]	
+		public static var Escape_Sabina_1:Class;
+		[Embed(source = "../../Content/Images/Escape/Sabina/2.png")]	
+		public static var Escape_Sabina_2:Class;
+		[Embed(source = "../../Content/Images/Escape/Sabina/3.png")]	
+		public static var Escape_Sabina_3:Class;
+		[Embed(source = "../../Content/Images/Escape/Sabina/4.png")]	
+		public static var Escape_Sabina_4:Class;
+		[Embed(source = "../../Content/Images/Escape/Sabina/ejected.png")]	
+		public static var Escape_Sabina_ejected:Class;
+
+		[Embed(source = "../../Content/Images/Escape/Gun/1.png")]	
+		public static var Escape_Gun_1:Class;
+		[Embed(source = "../../Content/Images/Escape/Gun/2.png")]	
+		public static var Escape_Gun_2:Class;
+		[Embed(source = "../../Content/Images/Escape/Gun/3.png")]	
+		public static var Escape_Gun_3:Class;
+		[Embed(source = "../../Content/Images/Escape/Gun/4.png")]	
+		public static var Escape_Gun_4:Class;		
+		[Embed(source = "../../Content/Images/Escape/Gun/5.png")]	
+		public static var Escape_Gun_5:Class;	
+
+		[Embed(source = "../../Content/Images/Escape/crosshair.png")]	
+		public static var Escape_crosshair:Class;	
+		
+		[Embed(source = "../../Content/Images/Escape/holdon.png")]	
+		public static var Escape_holdon:Class;	
+		[Embed(source = "../../Content/Images/Escape/lookout.png")]	
+		public static var Escape_lookout:Class;	
+
+		[Embed(source = "../../Content/Images/Escape/Helicopter/1.png")]	
+		public static var Escape_Helicopter_1:Class;	
+		[Embed(source = "../../Content/Images/Escape/Helicopter/2.png")]	
+		public static var Escape_Helicopter_2:Class;	
+
+		[Embed(source = "../../Content/Images/Escape/JeepNear/1.png")]	
+		public static var Escape_JeepNear_1:Class;	
+		[Embed(source = "../../Content/Images/Escape/JeepNear/2.png")]	
+		public static var Escape_JeepNear_2:Class;
+		
+		[Embed(source = "../../Content/Images/Escape/JeepFar/1.png")]	
+		public static var Escape_JeepFar_1:Class;	
+		[Embed(source = "../../Content/Images/Escape/JeepFar/2.png")]	
+		public static var Escape_JeepFar_2:Class;	
+
+		//Conclusion
+		[Embed(source = "../../Content/Images/Conclusion/title.png")]	
+		public static var Conclusion_title:Class;
+
+		[Embed(source = "../../Content/Images/Escape/bg.png")]	
+		public static var Conclusion_bg:Class;
 		
 	}
 
-}
+}	
