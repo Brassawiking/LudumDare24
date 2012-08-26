@@ -120,6 +120,7 @@ package States.Escape
 			if (attackTimer < 0) {
 				_lookout.visible = false;
 				FlxG.flash(0xffffffff, 0.1);
+				FlxG.play(Sound.machinegun);
 				attackTimer = 200 + Math.random() * 500;
 				
 				if (_crosshair.visible) {
@@ -135,24 +136,35 @@ package States.Escape
 			frameCounter++;
 			if (_jeepNearHP > 0) {
 				_jeepNear.x = 850 + (Math.sin(frameCounter / 35) * 2 - 1) * 35;
+			} else if (_jeepNearHP == 0) {
+				_jeepNearHP--;
+				FlxG.play(Sound.explosion);
 			} else {
 				_jeepNear.loadGraphic(Images.Escape_JeepNear_2);
 				_jeepNear.x += 10;
 			}
+			
 			if (_jeepFarHP > 0) {
 				_jeepFar.x = 700 + (Math.sin(frameCounter / 60)*2 - 1) * 20;
+			} else if (_jeepFarHP == 0) {
+				_jeepFarHP--;
+				FlxG.play(Sound.explosion);
 			} else {
 				_jeepFar.loadGraphic(Images.Escape_JeepFar_2);
 				_jeepFar.x += 10;
 			}
+			
 			if (_helicopterHP > 0) {
 				_helicopter.y = 60 + (Math.sin(frameCounter / 50)*2 - 1) * 10;
+			} 
+			else if (_helicopterHP == 0) {
+				_helicopterHP--;
+				FlxG.play(Sound.explosion);
 			} else {
 				_helicopter.loadGraphic(Images.Escape_Helicopter_2);
 				_helicopter.x += 10;
 			}
-
-			
+						
 		}
 		
 		private function fadeInComplete():void
@@ -185,6 +197,7 @@ package States.Escape
 		private var gotMag:Boolean = false;
 		private var gunReady:Boolean = false;
 		private var justFired:Boolean = false;
+		private var gunCocked:Boolean = false;
 		private function ShootOut():void
 		{
 			if (FlxG.keys.X) {
@@ -211,12 +224,16 @@ package States.Escape
 					if (ammo > 0 && !justFired) {
 						justFired = true;
 						FlxG.flash(0x99ffffff, 0.1);
+						FlxG.play(Sound.gun);
 						ammo--;
 						checkDamage();
 						if (ammo == 0) {
 							gunReady = false;
 							gotMag = false;
 						}
+					} else if (!justFired) {
+						justFired = true;
+						FlxG.play(Sound.click);
 					}
 				} else {
 					justFired = false;
@@ -232,8 +249,16 @@ package States.Escape
 					if (!gunReady) {
 						gunReady = true;
 					}
+					if (!gunCocked) {
+						FlxG.play(Sound.click2);
+						gunCocked = true;
+					}
 					_gun.loadGraphic(Images.Escape_Gun_5);
 				} else if (gotMag) {
+					if (gunCocked) {
+						FlxG.play(Sound.click);
+						gunCocked = false;
+					}
 					_gun.loadGraphic(Images.Escape_Gun_4);
 				} else {
 					_gun.loadGraphic(Images.Escape_Gun_3);

@@ -155,6 +155,10 @@ package States.Run
 				_currentAction = Dead;
 			}
 			
+			if (_sabina.overlaps(_enemy)) {
+				FlxG.play(Sound.gun);
+			}
+			
 		}
 		
 		private function Dead():void

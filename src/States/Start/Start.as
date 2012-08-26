@@ -13,6 +13,7 @@ package States.Start
 			
 			_isActive = true;
 			FlxG.flash(0xff000000, 1, fadeInComplete);
+			FlxG.playMusic(Music.intro);
 		}
 		
 		override public function update():void

@@ -116,7 +116,7 @@ package States.Survive
 			_sabina.loadGraphic(Images.Survive_Sabina_4);
 			
 			_currentAction = null;
-			
+			FlxG.play(Sound.machinegun);
 			FlxG.fade(0xff000000, 1, function():void {
 				FlxG.switchState(new Survive);
 			});
@@ -129,7 +129,7 @@ package States.Survive
 			_sabina.loadGraphic(Images.Survive_Sabina_3);
 			
 			_currentAction = null;
-			
+			FlxG.play(Sound.machinegun);
 			FlxG.fade(0xff000000, 1, function():void {
 				FlxG.switchState(new Escape);
 			});

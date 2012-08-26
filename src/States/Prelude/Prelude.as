@@ -10,6 +10,7 @@ package States.Prelude
 		private var _backpack:FlxSprite;
 		private var _nearCrowd:FlxSprite;
 		private var _farCrowd:FlxSprite;
+		private var _explosion:FlxSprite;
 		
 		private var _mainGroup:FlxGroup;
 		
@@ -22,10 +23,13 @@ package States.Prelude
 			var _mainGroup:FlxGroup = new FlxGroup();
 			
 			_mainGroup.add(new FlxSprite(0, 0, Images.Prelude_bg));
-			
+
+			_explosion = new FlxSprite(0, 0, Images.Prelude_explosion);
+			_explosion.visible = false;
 			_farCrowd = new FlxSprite(0, 0, Images.Prelude_crowdFar)
 			_nearCrowd = new FlxSprite(0, 0, Images.Prelude_crowdNear)
 			
+			_mainGroup.add(_explosion);
 			_mainGroup.add(_farCrowd);
 			_mainGroup.add(_nearCrowd);
 			
@@ -165,9 +169,10 @@ package States.Prelude
 		private function TakePicture():void
 		{
 			if (FlxG.keys.UP)
-			{
+			{4
 				_sabina.loadGraphic(Images.Prelude_Sabina_6);
 				if (FlxG.keys.C) {
+					FlxG.play(Sound.click);
 					FlxG.flash(0xffffffff, 1, EndPreludeScene);
 					_currentAction = null;
 				}
@@ -181,6 +186,8 @@ package States.Prelude
 		private function EndPreludeScene():void
 		{
 			FlxG.flash(0x99ff0000)
+			FlxG.play(Sound.bigexplosion);
+			_explosion.visible = true;
 			FlxG.shake(0.05, 2, FinalFadeOut, true, 2);
 		}
 		

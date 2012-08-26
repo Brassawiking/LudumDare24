@@ -2,6 +2,7 @@ package States.Conclusion
 {
 	import org.flixel.*;
 	import Resources.*;
+	import States.Credits.Credits;
 	import States.Start.Start;
 	public class Conclusion extends FlxState
 	{
@@ -156,7 +157,7 @@ package States.Conclusion
 			if (FlxG.keys.C && !justPressed) {
 				justPressed = true;
 				FlxG.fade(0xff000000, 3, function():void {
-					FlxG.switchState(new Start);
+					FlxG.switchState(new Credits);
 				});
 				_currentAction = null;
 			} else if (!FlxG.keys.C) {

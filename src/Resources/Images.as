@@ -24,6 +24,9 @@ package Resources
 		public static var Prelude_crowdNear:Class;
 		[Embed(source = "../../Content/Images/Prelude/crowdFar.png")]	
 		public static var Prelude_crowdFar:Class;
+		[Embed(source = "../../Content/Images/Prelude/explosion.png")]	
+		public static var Prelude_explosion:Class;
+		
 
 		[Embed(source = "../../Content/Images/Prelude/Sabina/1.png")]	
 		public static var Prelude_Sabina_1:Class;
@@ -164,7 +167,7 @@ package Resources
 
 		[Embed(source = "../../Content/Images/Conclusion/bg.png")]	
 		public static var Conclusion_bg:Class;
-	
+		
 		[Embed(source = "../../Content/Images/Conclusion/helicopters.png")]	
 		public static var Conclusion_helicopters:Class;
 		
@@ -186,7 +189,9 @@ package Resources
 		[Embed(source = "../../Content/Images/Conclusion/Speech/6.png")]	
 		public static var Conclusion_Speech_6:Class;
 
-		
+		//Credits
+		[Embed(source = "../../Content/Images/Credits/credits.png")]	
+		public static var Credits_credits:Class;
 	}
 
 }	
