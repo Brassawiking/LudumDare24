@@ -8,6 +8,9 @@ package States.Prelude
 		private var _title:FlxSprite;
 		private var _sabina:FlxSprite;
 		private var _backpack:FlxSprite;
+		private var _nearCrowd:FlxSprite;
+		private var _farCrowd:FlxSprite;
+		
 		private var _mainGroup:FlxGroup;
 		
 		private var _currentAction:Function;
@@ -19,8 +22,12 @@ package States.Prelude
 			var _mainGroup:FlxGroup = new FlxGroup();
 			
 			_mainGroup.add(new FlxSprite(0, 0, Images.Prelude_bg));
-			_mainGroup.add(new FlxSprite(0, 0, Images.Prelude_crowdFar));
-			_mainGroup.add(new FlxSprite(0, 0, Images.Prelude_crowdNear));
+			
+			_farCrowd = new FlxSprite(0, 0, Images.Prelude_crowdFar)
+			_nearCrowd = new FlxSprite(0, 0, Images.Prelude_crowdNear)
+			
+			_mainGroup.add(_farCrowd);
+			_mainGroup.add(_nearCrowd);
 			
 			_sabina = new FlxSprite(0, 0, Images.Prelude_Sabina_1);
 			_mainGroup.add(_sabina);
@@ -38,6 +45,7 @@ package States.Prelude
 			FlxG.flash(0xff000000, 1, fadeInComplete);
 		}
 		
+		private var frameCounter:int = 0;
 		private var reverseTitleFade:Boolean = false;
 		override public function update():void
 		{
@@ -59,6 +67,10 @@ package States.Prelude
 			if (_currentAction != null) {
 				_currentAction();
 			}
+			
+			frameCounter++;
+			_farCrowd.y = Math.sin(frameCounter / 20) * 5;
+			_nearCrowd.y = 5 + Math.sin(frameCounter / 15) * 5;
 
 		}
 		

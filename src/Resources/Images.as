@@ -62,7 +62,7 @@ package Resources
 
 		[Embed(source = "../../Content/Images/Run/Sabina/standing.png")]	
 		public static var Run_Sabina_standing:Class;
-		[Embed(source = "../../Content/Images/Run/Sabina/standing.png")]	
+		[Embed(source = "../../Content/Images/Run/Sabina/running.png")]	
 		public static var Run_Sabina_running:Class;
 		[Embed(source = "../../Content/Images/Run/Sabina/duck.png")]	
 		public static var Run_Sabina_duck:Class;
@@ -162,8 +162,30 @@ package Resources
 		[Embed(source = "../../Content/Images/Conclusion/title.png")]	
 		public static var Conclusion_title:Class;
 
-		[Embed(source = "../../Content/Images/Escape/bg.png")]	
+		[Embed(source = "../../Content/Images/Conclusion/bg.png")]	
 		public static var Conclusion_bg:Class;
+	
+		[Embed(source = "../../Content/Images/Conclusion/helicopters.png")]	
+		public static var Conclusion_helicopters:Class;
+		
+		[Embed(source = "../../Content/Images/Conclusion/Sabina/1.png")]	
+		public static var Conclusion_Sabina_1:Class;
+		[Embed(source = "../../Content/Images/Conclusion/Sabina/2.png")]	
+		public static var Conclusion_Sabina_2:Class;
+		
+		[Embed(source = "../../Content/Images/Conclusion/Speech/1.png")]	
+		public static var Conclusion_Speech_1:Class;
+		[Embed(source = "../../Content/Images/Conclusion/Speech/2.png")]	
+		public static var Conclusion_Speech_2:Class;
+		[Embed(source = "../../Content/Images/Conclusion/Speech/3.png")]	
+		public static var Conclusion_Speech_3:Class;
+		[Embed(source = "../../Content/Images/Conclusion/Speech/4.png")]	
+		public static var Conclusion_Speech_4:Class;
+		[Embed(source = "../../Content/Images/Conclusion/Speech/5.png")]	
+		public static var Conclusion_Speech_5:Class;
+		[Embed(source = "../../Content/Images/Conclusion/Speech/6.png")]	
+		public static var Conclusion_Speech_6:Class;
+
 		
 	}
 
