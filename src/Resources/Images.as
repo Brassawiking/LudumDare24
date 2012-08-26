@@ -48,6 +48,65 @@ package Resources
 		public static var Prelude_Backpack_4:Class;
 
 		
+		//Run
+		[Embed(source = "../../Content/Images/Run/title.png")]	
+		public static var Run_title:Class;
+
+		[Embed(source = "../../Content/Images/Run/bg.png")]	
+		public static var Run_bg:Class;
+
+		[Embed(source = "../../Content/Images/Run/enemy.png")]	
+		public static var Run_enemy:Class;
+		[Embed(source = "../../Content/Images/Run/car.png")]	
+		public static var Run_car:Class;
+
+		[Embed(source = "../../Content/Images/Run/Sabina/standing.png")]	
+		public static var Run_Sabina_standing:Class;
+		[Embed(source = "../../Content/Images/Run/Sabina/standing.png")]	
+		public static var Run_Sabina_running:Class;
+		[Embed(source = "../../Content/Images/Run/Sabina/duck.png")]	
+		public static var Run_Sabina_duck:Class;
+		[Embed(source = "../../Content/Images/Run/Sabina/dive.png")]	
+		public static var Run_Sabina_dive:Class;
+		[Embed(source = "../../Content/Images/Run/Sabina/dead.png")]	
+		public static var Run_Sabina_dead:Class;
+		
+		
+		//Survive		
+		[Embed(source = "../../Content/Images/Survive/title.png")]	
+		public static var Survive_title:Class;
+
+		[Embed(source = "../../Content/Images/Survive/bg.png")]	
+		public static var Survive_bg:Class;
+
+		[Embed(source = "../../Content/Images/Survive/Sabina/1.png")]	
+		public static var Survive_Sabina_1:Class;
+		[Embed(source = "../../Content/Images/Survive/Sabina/2.png")]	
+		public static var Survive_Sabina_2:Class;
+		[Embed(source = "../../Content/Images/Survive/Sabina/3.png")]	
+		public static var Survive_Sabina_3:Class;
+		[Embed(source = "../../Content/Images/Survive/Sabina/4.png")]	
+		public static var Survive_Sabina_4:Class;		
+		[Embed(source = "../../Content/Images/Survive/Sabina/5.png")]	
+		public static var Survive_Sabina_5:Class;
+
+		[Embed(source = "../../Content/Images/Survive/Toolbox/1.png")]	
+		public static var Survive_Toolbox_1:Class;
+		[Embed(source = "../../Content/Images/Survive/Toolbox/2.png")]	
+		public static var Survive_Toolbox_2:Class;
+		[Embed(source = "../../Content/Images/Survive/Toolbox/3.png")]	
+		public static var Survive_Toolbox_3:Class;
+		[Embed(source = "../../Content/Images/Survive/Toolbox/4.png")]	
+		public static var Survive_Toolbox_4:Class;
+	
+		[Embed(source = "../../Content/Images/Survive/Enemy/1.png")]	
+		public static var Survive_Enemy_1:Class;
+		[Embed(source = "../../Content/Images/Survive/Enemy/2.png")]	
+		public static var Survive_Enemy_2:Class;
+		[Embed(source = "../../Content/Images/Survive/Enemy/3.png")]	
+		public static var Survive_Enemy_3:Class;
+
+		
 	}
 
 }

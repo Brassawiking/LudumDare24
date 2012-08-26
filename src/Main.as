@@ -1,6 +1,8 @@
 package {
 	import org.flixel.*;
 	import States.Start.Start;
+	import States.Run.Run;
+	import States.Survive.Survive;
 	[SWF(width = "960", height = "540", backgroundColor = "#000000")]
 	[Frame(factoryClass="Preloader")]	
 	
